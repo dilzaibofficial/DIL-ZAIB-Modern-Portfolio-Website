@@ -65,8 +65,8 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     const form = this;
 
     const formData = {
-        name: form.name.value,
-        email: form.email.value,
+        from_name: form.from_name.value,
+        reply_to: form.reply_to.value,
         phone: form.phone.value,
         message: form.message.value
     };
