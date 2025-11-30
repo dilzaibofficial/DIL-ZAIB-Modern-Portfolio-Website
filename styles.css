@@ -1,16 +1,34 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+/* body {
     font-family: 'Poppins', sans-serif;
     background: #121212;
     color: #e0e0e0;
     line-height: 1.6;
     overflow-x: hidden;
-}
+} */
 
 .container {
     max-width: 1200px;
@@ -346,4 +364,10 @@ h2 {
     .services-grid, .projects-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* LIGHT MODE */
+.light-mode {
+    background-color: #fff;
+    color: #000;
 }
